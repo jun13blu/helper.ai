@@ -7,7 +7,7 @@ export default class Sidebar extends React.Component {
     return (
       <Layout.Header>
         <Link to="/" style={{ textDecoration: 'none' }}>
-          <h1 style={{ color: 'white' }}>Helper.ai</h1>
+          <h1 style={{ color: 'white' }}>helper.ai</h1>
         </Link>
       </Layout.Header>
     )

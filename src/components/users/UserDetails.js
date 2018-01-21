@@ -38,12 +38,12 @@ export default class Sidebar extends React.Component {
       chat
     } = data[this.props.match.params.user]
     return (
-      <Layout.Content style={{ padding: '8px 48px 0 48px' }}>
-        <Link to="/users">
-          <h2>
-            <Icon type="arrow-left" /> Back to users
-          </h2>
-        </Link>
+      <div>
+        <h2>
+          <Link to="/users">
+            <Icon type="arrow-left" /> Users
+          </Link>
+        </h2>
         <Card title={name}>
           <Row gutter={16}>
             <Col span={18}>
@@ -84,7 +84,7 @@ export default class Sidebar extends React.Component {
           )}
           style={{ margin: '16px 32px' }}
         />
-      </Layout.Content>
+      </div>
     )
   }
 }

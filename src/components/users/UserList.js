@@ -6,7 +6,7 @@ export default class Sidebar extends React.Component {
   render() {
     const { users } = this.props
     return (
-      <Layout.Content style={{ padding: '8px 48px 0 48px' }}>
+      <div>
         <h2>Users</h2>
         <List
           itemLayout="horizontal"
@@ -26,7 +26,7 @@ export default class Sidebar extends React.Component {
             </List.Item>
           )}
         />
-      </Layout.Content>
+      </div>
     )
   }
 }

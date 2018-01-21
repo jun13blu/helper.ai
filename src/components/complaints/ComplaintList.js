@@ -11,7 +11,7 @@ export default class ComplaintList extends React.Component {
     const { complaints } = this.props
     const { key } = this.state
     return (
-      <Layout.Content style={{ padding: '8px 48px 0 48px' }}>
+      <div>
         <h2>Complaints</h2>
         <Menu
           onClick={this.handleClick}
@@ -71,7 +71,7 @@ export default class ComplaintList extends React.Component {
             )}
           />
         )}
-      </Layout.Content>
+      </div>
     )
   }
 }

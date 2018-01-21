@@ -53,12 +53,12 @@ export default class Sidebar extends React.Component {
       completed
     } = data[this.props.match.params.issue]
     return (
-      <Layout.Content style={{ padding: '8px 48px 0 48px' }}>
-        <Link to="/complaints">
-          <h2>
-            <Icon type="arrow-left" /> Back to complaints
-          </h2>
-        </Link>
+      <div>
+        <h2>
+          <Link to="/complaints">
+            <Icon type="arrow-left" /> Complaints
+          </Link>
+        </h2>
         <Card>
           <Card.Meta
             avatar={<Avatar icon="user" />}
@@ -95,7 +95,7 @@ export default class Sidebar extends React.Component {
           )}
           style={{ margin: '16px 32px' }}
         />
-      </Layout.Content>
+      </div>
     )
   }
 }

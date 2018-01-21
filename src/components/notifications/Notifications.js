@@ -8,7 +8,7 @@ export default class Notifications extends React.Component {
   render() {
     const { notifications } = this.props
     return (
-      <Layout.Content style={{ padding: '8px 48px 0 48px' }}>
+      <div>
         <h2>Notifications</h2>
         <List
           itemLayout="horizontal"
@@ -30,7 +30,7 @@ export default class Notifications extends React.Component {
             </List.Item>
           )}
         />
-      </Layout.Content>
+      </div>
     )
   }
 }
