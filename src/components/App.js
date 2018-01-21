@@ -5,6 +5,7 @@ import Sidebar from './sidebar'
 import Header from './Header'
 import Footer from './Footer'
 import Content from './Content'
+import { complaints } from './data.json'
 
 const notifications = [
   {
@@ -131,157 +132,6 @@ const users = [
   }
 ]
 
-const complaints = {
-  progress: [
-    {
-      title: 'Gas leakage',
-      location: 'Sunway',
-      worker: 'John',
-      rating: 5,
-      expected: '31 Dec',
-      time: '2 mins ago',
-      link: '1'
-    },
-    {
-      title: 'Traffic jam',
-      location: 'Sunway',
-      worker: 'John',
-      rating: 5,
-      expected: '31 Dec',
-      time: '2 mins ago',
-      link: '1'
-    },
-    {
-      title: 'Broken clock',
-      location: 'Sunway',
-      worker: 'John',
-      rating: 5,
-      expected: '31 Dec',
-      time: '2 mins ago',
-      link: '1'
-    },
-    {
-      title: 'Faulty display',
-      location: 'Sunway',
-      worker: 'John',
-      rating: 5,
-      expected: '31 Dec',
-      time: '2 mins ago',
-      link: '1'
-    },
-    {
-      title: 'Gas leakage',
-      location: 'Sunway',
-      worker: 'John',
-      rating: 5,
-      expected: '31 Dec',
-      time: '2 mins ago',
-      link: '1'
-    },
-    {
-      title: 'Traffic jam',
-      location: 'Sunway',
-      worker: 'John',
-      rating: 5,
-      expected: '31 Dec',
-      time: '2 mins ago',
-      link: '1'
-    },
-    {
-      title: 'Broken clock',
-      location: 'Sunway',
-      worker: 'John',
-      rating: 5,
-      expected: '31 Dec',
-      time: '2 mins ago',
-      link: '1'
-    },
-    {
-      title: 'Faulty display',
-      location: 'Sunway',
-      worker: 'John',
-      rating: 5,
-      expected: '31 Dec',
-      time: '2 mins ago',
-      link: '1'
-    }
-  ],
-  completed: [
-    {
-      title: 'Gas leakage',
-      location: 'Sunway',
-      worker: 'John',
-      completed: '3 days ago',
-      rating: 4,
-      time: '2 mins',
-      link: '2'
-    },
-    {
-      title: 'Traffic jam',
-      location: 'Sunway',
-      worker: 'John',
-      completed: '3 days ago',
-      rating: 4,
-      time: '2 mins',
-      link: '2'
-    },
-    {
-      title: 'Broken clock',
-      location: 'Sunway',
-      worker: 'John',
-      completed: '3 days ago',
-      rating: 4,
-      time: '2 mins',
-      link: '2'
-    },
-    {
-      title: 'Faulty display',
-      location: 'Sunway',
-      worker: 'John',
-      completed: '3 days ago',
-      rating: 4,
-      time: '2 mins',
-      link: '2'
-    },
-    {
-      title: 'Gas leakage',
-      location: 'Sunway',
-      worker: 'John',
-      completed: '3 days ago',
-      rating: 4,
-      time: '2 mins',
-      link: '2'
-    },
-    {
-      title: 'Traffic jam',
-      location: 'Sunway',
-      worker: 'John',
-      completed: '3 days ago',
-      rating: 4,
-      time: '2 mins',
-      link: '2'
-    },
-    {
-      title: 'Broken clock',
-      location: 'Sunway',
-      worker: 'John',
-      completed: '3 days ago',
-      rating: 4,
-      time: '2 mins',
-      link: '2'
-    },
-    {
-      title: 'Faulty display',
-      location: 'Sunway',
-      worker: 'John',
-      completed: '3 days ago',
-      rating: 4,
-      time: '2 mins',
-      link: '2'
-    }
-  ]
-}
-
 export default class App extends Component {
   state = {
     collapsed: true,
@@ -292,7 +142,30 @@ export default class App extends Component {
   }
 
   componentDidMount() {
-    fetch('http://35.187.255.28:5000/complaint').then(res => console.log(res))
+    fetch('http://35.187.255.28:5000/complaint')
+      .then(res => res.json())
+      .then(json => json.reduce((reverse, data) => [data, ...reverse]))
+      .then(json =>
+        this.setState({
+          loading: false,
+          complaints: [
+            ...json.map(complaint => ({
+              link: complaint.ha_complaint_id.toString(),
+              title: complaint.ha_complaint_name,
+              location: complaint.ha_complaint_location || 'Unknown',
+              worker: 'John',
+              rating: 4,
+              date: '31 Dec',
+              description: complaint.ha_complaint_description,
+              user: complaint.ha_complaint_chatbotuserid,
+              submitted: '2 mins ago',
+              completed: false,
+              chat: []
+            })),
+            ...this.state.complaints
+          ]
+        })
+      )
   }
 
   handleDeleteNoti = index =>
@@ -305,7 +178,7 @@ export default class App extends Component {
   handleCollapse = () => this.setState({ collapsed: !this.state.collapsed })
 
   render() {
-    const { collapsed } = this.state
+    const { collapsed, loading } = this.state
     return (
       <BrowserRouter>
         <Layout
@@ -322,6 +195,7 @@ export default class App extends Component {
           >
             <Header />
             <Content
+              loading={loading}
               notifications={this.state.notifications}
               users={this.state.users}
               complaints={this.state.complaints}

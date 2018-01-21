@@ -1,0 +1,316 @@
+{
+  "complaints": [
+    {
+      "link": "24151",
+      "title": "Gas leakage",
+      "location": "Sunway",
+      "worker": "John",
+      "rating": 5,
+      "date": "31 Dec, 2017",
+      "description":
+        "Pipe at Sunway appears to be broken and might cause accident, please deal with it ASAP.",
+      "user": "Jessica",
+      "submitted": "29 Dec, 2017",
+      "completed": false,
+      "chat": [
+        {
+          "name": "Dan",
+          "content": "I am assigning this issue to John."
+        },
+        { "name": "John", "content": "Dealing with it now." }
+      ]
+    },
+    {
+      "link": "982",
+      "title": "Broken clock",
+      "location": "Sunway",
+      "worker": "James",
+      "rating": 4,
+      "date": "30 Dec, 2017",
+      "description": "The clock at lobby seems to be faulty.",
+      "user": "Jessica",
+      "submitted": "27 Dec, 2017",
+      "completed": true,
+      "chat": [
+        {
+          "name": "Jessie",
+          "content": "James, can you please fix the clock."
+        },
+        { "name": "James", "content": "Alright." },
+        { "name": "James", "content": "Done." }
+      ]
+    },
+    {
+      "link": "10234",
+      "title": "Traffic jam",
+      "location": "Sunway",
+      "worker": "June",
+      "rating": 4,
+      "date": "30 Dec, 2017",
+      "description": "The traffic is bad.",
+      "user": "Jessica",
+      "submitted": "27 Dec, 2017",
+      "completed": true,
+      "chat": [
+        {
+          "name": "Jessie",
+          "content": "James, can you please fix the traffic."
+        },
+        { "name": "James", "content": "Alright." }
+      ]
+    },
+    {
+      "link": "34123",
+      "title": "Faulty display",
+      "location": "Sunway",
+      "worker": "James",
+      "rating": 4,
+      "date": "30 Dec, 2017",
+      "description": "The display at lobby seems to be faulty.",
+      "user": "Jessica",
+      "submitted": "27 Dec, 2017",
+      "completed": false,
+      "chat": [
+        {
+          "name": "Jessie",
+          "content": "James, can you please fix the display."
+        },
+        { "name": "James", "content": "Alright." }
+      ]
+    },
+    {
+      "link": "24151",
+      "title": "Gas leakage",
+      "location": "Sunway",
+      "worker": "John",
+      "rating": 5,
+      "date": "31 Dec, 2017",
+      "description":
+        "Pipe at Sunway appears to be broken and might cause accident, please deal with it ASAP.",
+      "user": "Jessica",
+      "submitted": "29 Dec, 2017",
+      "completed": false,
+      "chat": [
+        {
+          "name": "Dan",
+          "content": "I am assigning this issue to John."
+        },
+        { "name": "John", "content": "Dealing with it now." }
+      ]
+    },
+    {
+      "link": "982",
+      "title": "Broken clock",
+      "location": "Sunway",
+      "worker": "James",
+      "rating": 4,
+      "date": "30 Dec, 2017",
+      "description": "The clock at lobby seems to be faulty.",
+      "user": "Jessica",
+      "submitted": "27 Dec, 2017",
+      "completed": true,
+      "chat": [
+        {
+          "name": "Jessie",
+          "content": "James, can you please fix the clock."
+        },
+        { "name": "James", "content": "Alright." },
+        { "name": "James", "content": "Done." }
+      ]
+    },
+    {
+      "link": "10234",
+      "title": "Traffic jam",
+      "location": "Sunway",
+      "worker": "June",
+      "rating": 4,
+      "date": "30 Dec, 2017",
+      "description": "The traffic is bad.",
+      "user": "Jessica",
+      "submitted": "27 Dec, 2017",
+      "completed": true,
+      "chat": [
+        {
+          "name": "Jessie",
+          "content": "James, can you please fix the traffic."
+        },
+        { "name": "James", "content": "Alright." }
+      ]
+    },
+    {
+      "link": "34123",
+      "title": "Faulty display",
+      "location": "Sunway",
+      "worker": "James",
+      "rating": 4,
+      "date": "30 Dec, 2017",
+      "description": "The display at lobby seems to be faulty.",
+      "user": "Jessica",
+      "submitted": "27 Dec, 2017",
+      "completed": false,
+      "chat": [
+        {
+          "name": "Jessie",
+          "content": "James, can you please fix the display."
+        },
+        { "name": "James", "content": "Alright." }
+      ]
+    },
+    {
+      "link": "24151",
+      "title": "Gas leakage",
+      "location": "Sunway",
+      "worker": "John",
+      "rating": 5,
+      "date": "31 Dec, 2017",
+      "description":
+        "Pipe at Sunway appears to be broken and might cause accident, please deal with it ASAP.",
+      "user": "Jessica",
+      "submitted": "29 Dec, 2017",
+      "completed": false,
+      "chat": [
+        {
+          "name": "Dan",
+          "content": "I am assigning this issue to John."
+        },
+        { "name": "John", "content": "Dealing with it now." }
+      ]
+    },
+    {
+      "link": "982",
+      "title": "Broken clock",
+      "location": "Sunway",
+      "worker": "James",
+      "rating": 4,
+      "date": "30 Dec, 2017",
+      "description": "The clock at lobby seems to be faulty.",
+      "user": "Jessica",
+      "submitted": "27 Dec, 2017",
+      "completed": true,
+      "chat": [
+        {
+          "name": "Jessie",
+          "content": "James, can you please fix the clock."
+        },
+        { "name": "James", "content": "Alright." },
+        { "name": "James", "content": "Done." }
+      ]
+    },
+    {
+      "link": "10234",
+      "title": "Traffic jam",
+      "location": "Sunway",
+      "worker": "June",
+      "rating": 4,
+      "date": "30 Dec, 2017",
+      "description": "The traffic is bad.",
+      "user": "Jessica",
+      "submitted": "27 Dec, 2017",
+      "completed": true,
+      "chat": [
+        {
+          "name": "Jessie",
+          "content": "James, can you please fix the traffic."
+        },
+        { "name": "James", "content": "Alright." }
+      ]
+    },
+    {
+      "link": "34123",
+      "title": "Faulty display",
+      "location": "Sunway",
+      "worker": "James",
+      "rating": 4,
+      "date": "30 Dec, 2017",
+      "description": "The display at lobby seems to be faulty.",
+      "user": "Jessica",
+      "submitted": "27 Dec, 2017",
+      "completed": false,
+      "chat": [
+        {
+          "name": "Jessie",
+          "content": "James, can you please fix the display."
+        },
+        { "name": "James", "content": "Alright." }
+      ]
+    },
+    {
+      "link": "24151",
+      "title": "Gas leakage",
+      "location": "Sunway",
+      "worker": "John",
+      "rating": 5,
+      "date": "31 Dec, 2017",
+      "description":
+        "Pipe at Sunway appears to be broken and might cause accident, please deal with it ASAP.",
+      "user": "Jessica",
+      "submitted": "29 Dec, 2017",
+      "completed": false,
+      "chat": [
+        {
+          "name": "Dan",
+          "content": "I am assigning this issue to John."
+        },
+        { "name": "John", "content": "Dealing with it now." }
+      ]
+    },
+    {
+      "link": "982",
+      "title": "Broken clock",
+      "location": "Sunway",
+      "worker": "James",
+      "rating": 4,
+      "date": "30 Dec, 2017",
+      "description": "The clock at lobby seems to be faulty.",
+      "user": "Jessica",
+      "submitted": "27 Dec, 2017",
+      "completed": true,
+      "chat": [
+        {
+          "name": "Jessie",
+          "content": "James, can you please fix the clock."
+        },
+        { "name": "James", "content": "Alright." },
+        { "name": "James", "content": "Done." }
+      ]
+    },
+    {
+      "link": "10234",
+      "title": "Traffic jam",
+      "location": "Sunway",
+      "worker": "June",
+      "rating": 4,
+      "date": "30 Dec, 2017",
+      "description": "The traffic is bad.",
+      "user": "Jessica",
+      "submitted": "27 Dec, 2017",
+      "completed": true,
+      "chat": [
+        {
+          "name": "Jessie",
+          "content": "James, can you please fix the traffic."
+        },
+        { "name": "James", "content": "Alright." }
+      ]
+    },
+    {
+      "link": "34123",
+      "title": "Faulty display",
+      "location": "Sunway",
+      "worker": "James",
+      "rating": 4,
+      "date": "30 Dec, 2017",
+      "description": "The display at lobby seems to be faulty.",
+      "user": "Jessica",
+      "submitted": "27 Dec, 2017",
+      "completed": false,
+      "chat": [
+        {
+          "name": "Jessie",
+          "content": "James, can you please fix the display."
+        },
+        { "name": "James", "content": "Alright." }
+      ]
+    }
+  ]
+}

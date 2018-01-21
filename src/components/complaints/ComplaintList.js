@@ -25,7 +25,7 @@ export default class ComplaintList extends React.Component {
         {key === 'progress' ? (
           <List
             itemLayout="horizontal"
-            dataSource={complaints.progress}
+            dataSource={complaints.filter(complaint => !complaint.completed)}
             renderItem={item => (
               <List.Item>
                 <List.Item.Meta
@@ -33,12 +33,12 @@ export default class ComplaintList extends React.Component {
                   title={
                     <Link to={`/complaints/${item.link}`}>{item.title}</Link>
                   }
-                  description={`To be handled before ${item.expected} by ${
+                  description={`To be handled before ${item.date} by ${
                     item.worker
                   }`}
                 />
                 <div>
-                  {item.location}, {item.time}
+                  {item.location}, {item.submitted}
                 </div>
               </List.Item>
             )}
@@ -46,7 +46,7 @@ export default class ComplaintList extends React.Component {
         ) : (
           <List
             itemLayout="horizontal"
-            dataSource={complaints.completed}
+            dataSource={complaints.filter(complaint => complaint.completed)}
             renderItem={item => (
               <List.Item>
                 <List.Item.Meta
@@ -60,12 +60,10 @@ export default class ComplaintList extends React.Component {
                   title={
                     <Link to={`/complaints/${item.link}`}>{item.title}</Link>
                   }
-                  description={`Completed by ${item.worker} on ${
-                    item.completed
-                  }`}
+                  description={`Completed by ${item.worker} on ${item.date}`}
                 />
                 <div>
-                  {item.location}, {item.time}
+                  {item.location}, {item.submitted}
                 </div>
               </List.Item>
             )}

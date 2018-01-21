@@ -9,7 +9,13 @@ import { Layout } from 'antd'
 
 export default class Sidebar extends React.Component {
   render() {
-    const { notifications, handleDeleteNoti, users, complaints } = this.props
+    const {
+      notifications,
+      handleDeleteNoti,
+      users,
+      complaints,
+      loading
+    } = this.props
     return (
       <Layout.Content style={{ padding: '16px 48px 0 48px' }}>
         <Switch>
@@ -17,7 +23,11 @@ export default class Sidebar extends React.Component {
             exact
             path="/"
             render={props => (
-              <Dashboard users={users} complaints={complaints} />
+              <Dashboard
+                users={users}
+                complaints={complaints}
+                loading={loading}
+              />
             )}
           />
           <Route
@@ -26,14 +36,20 @@ export default class Sidebar extends React.Component {
               <Notifications
                 notifications={notifications}
                 handleDelete={handleDeleteNoti}
+                loading={loading}
               />
             )}
           />
           <Route
             path="/complaints"
-            render={props => <Complaints complaints={complaints} />}
+            render={props => (
+              <Complaints complaints={complaints} loading={loading} />
+            )}
           />
-          <Route path="/users" render={props => <Users users={users} />} />
+          <Route
+            path="/users"
+            render={props => <Users users={users} loading={loading} />}
+          />
           <Route path="/statistics" component={Statistics} />
           <Route render={() => <Redirect to="/" />} />
         </Switch>

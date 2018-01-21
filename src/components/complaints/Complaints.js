@@ -11,9 +11,12 @@ export default class Complaints extends React.Component {
         <Route
           exact
           path="/complaints"
-          render={props => <ComplaintList complaints={complaints} />}
+          render={props => <ComplaintList {...props} complaints={complaints} />}
         />
-        <Route path="/complaints/:issue" component={Issue} />
+        <Route
+          path="/complaints/:issue"
+          render={props => <Issue {...props} complaints={complaints} />}
+        />
         <Route render={() => <Redirect to="/complaints" />} />
       </Switch>
     )
