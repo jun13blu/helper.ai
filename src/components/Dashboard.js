@@ -1,6 +1,7 @@
 import React from 'react'
 import { Layout, Row, Col, Card } from 'antd'
 import { BarChart, LineChart, PieChart, RadarChart } from './charts'
+import { Link } from 'react-router-dom'
 import Map from './Map'
 
 export default class Sidebar extends React.Component {
@@ -15,14 +16,17 @@ export default class Sidebar extends React.Component {
             />
           </Col>
           <Col span={6}>
-            <Card title="Complaints" extra={<a href="#">More</a>}>
+            <Card
+              title="Complaints"
+              extra={<Link link="/complaints">More</Link>}
+            >
               <p>Card content</p>
               <p>Card content</p>
               <p>Card content</p>
             </Card>
           </Col>
           <Col span={6}>
-            <Card title="Users" extra={<a href="#">More</a>}>
+            <Card title="Users" extra={<Link link="/users">More</Link>}>
               <p>Card content</p>
               <p>Card content</p>
               <p>Card content</p>

@@ -1,5 +1,5 @@
 import React from 'react'
-import { Layout, List, Avatar, Menu, Icon, Card, Row, Col } from 'antd'
+import { Layout, List, Avatar, Icon, Card, Row, Col } from 'antd'
 import { Link } from 'react-router-dom'
 
 const data = {
@@ -58,6 +58,7 @@ export default class Sidebar extends React.Component {
             <Col span={6}>
               <img
                 src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png"
+                alt="mockup"
                 style={{ width: '100%' }}
               />
             </Col>

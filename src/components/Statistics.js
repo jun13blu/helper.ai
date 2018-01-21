@@ -1,6 +1,6 @@
 import React from 'react'
 import { Layout } from 'antd'
-import { BarChart, LineChart, PieChart, RadarChart } from './charts'
+import { LineChart } from './charts'
 
 export default class Statistics extends React.Component {
   render() {

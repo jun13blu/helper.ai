@@ -1,12 +1,5 @@
 import React from 'react'
-import {
-  Radar,
-  RadarChart,
-  PolarGrid,
-  Legend,
-  PolarAngleAxis,
-  PolarRadiusAxis
-} from 'recharts'
+import { Radar, RadarChart, PolarGrid, PolarAngleAxis } from 'recharts'
 
 const data = [
   { subject: 'Math', A: 120, B: 110, fullMark: 150 },
