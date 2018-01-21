@@ -8,10 +8,14 @@ import Statistics from './Statistics'
 
 export default class Sidebar extends React.Component {
   render() {
-    const { notifications, handleDeleteNoti } = this.props
+    const { notifications, handleDeleteNoti, users, complaints } = this.props
     return (
       <Switch>
-        <Route exact path="/" component={Dashboard} />
+        <Route
+          exact
+          path="/"
+          render={props => <Dashboard users={users} complaints={complaints} />}
+        />
         <Route
           path="/notifications"
           render={props => (
@@ -21,8 +25,11 @@ export default class Sidebar extends React.Component {
             />
           )}
         />
-        <Route path="/complaints" component={Complaints} />
-        <Route path="/users" component={Users} />
+        <Route
+          path="/complaints"
+          render={props => <Complaints complaints={complaints} />}
+        />
+        <Route path="/users" render={props => <Users users={users} />} />
         <Route path="/statistics" component={Statistics} />
         <Route render={() => <Redirect to="/" />} />
       </Switch>

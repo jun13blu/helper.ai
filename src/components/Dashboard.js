@@ -6,27 +6,34 @@ import Map from './Map'
 
 export default class Sidebar extends React.Component {
   render() {
+    const { users, complaints } = this.props
     return (
       <Layout.Content style={{ padding: '8px 48px 0 48px' }}>
         <Row gutter={16} style={{ margin: '16px 0px' }}>
           <Col span={12}>
             <Map
-              height="210px"
+              height="280px"
               currentLocation={{ lat: 37.782, lng: -122.443 }}
             />
           </Col>
           <Col span={6}>
             <Card title="Complaints" extra={<Link to="/complaints">More</Link>}>
-              <p>Card content</p>
-              <p>Card content</p>
-              <p>Card content</p>
+              {complaints.progress.slice(0, 5).map(complaint => (
+                <p>
+                  <Link to={`/complaints/${complaint.link}`}>
+                    {complaint.title}
+                  </Link>
+                </p>
+              ))}
             </Card>
           </Col>
           <Col span={6}>
             <Card title="Users" extra={<Link to="/users">More</Link>}>
-              <p>Card content</p>
-              <p>Card content</p>
-              <p>Card content</p>
+              {users.slice(0, 5).map(user => (
+                <p>
+                  <Link to={`/users/${user.link}`}>{user.name}</Link>
+                </p>
+              ))}
             </Card>
           </Col>
         </Row>

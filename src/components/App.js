@@ -6,7 +6,7 @@ import Header from './Header'
 import Footer from './Footer'
 import Content from './Content'
 
-const data = [
+const notifications = [
   {
     title: 'New complaint',
     description: 'A new complaint is submitted.',
@@ -72,10 +72,222 @@ const data = [
   }
 ]
 
+const users = [
+  {
+    name: 'Jane',
+    time: '13 April 2017',
+    complaints: 7,
+    rating: 4,
+    link: '1'
+  },
+  {
+    name: 'John',
+    time: '13 April 2017',
+    complaints: 7,
+    rating: 4,
+    link: '1'
+  },
+  {
+    name: 'Jack',
+    time: '13 April 2017',
+    complaints: 7,
+    rating: 4,
+    link: '1'
+  },
+  {
+    name: 'Jill',
+    time: '13 April 2017',
+    complaints: 7,
+    rating: 4,
+    link: '1'
+  },
+  {
+    name: 'Jacob',
+    time: '13 April 2017',
+    complaints: 7,
+    rating: 4,
+    link: '1'
+  },
+  {
+    name: 'Jessie',
+    time: '13 April 2017',
+    complaints: 7,
+    rating: 4,
+    link: '1'
+  },
+  {
+    name: 'Jeckie',
+    time: '13 April 2017',
+    complaints: 7,
+    rating: 4,
+    link: '1'
+  },
+  {
+    name: 'Johnnie',
+    time: '13 April 2017',
+    complaints: 7,
+    rating: 4,
+    link: '1'
+  }
+]
+
+const complaints = {
+  progress: [
+    {
+      title: 'Gas leakage',
+      location: 'Sunway',
+      worker: 'John',
+      rating: 5,
+      expected: '31 Dec',
+      time: '2 mins ago',
+      link: '1'
+    },
+    {
+      title: 'Traffic jam',
+      location: 'Sunway',
+      worker: 'John',
+      rating: 5,
+      expected: '31 Dec',
+      time: '2 mins ago',
+      link: '1'
+    },
+    {
+      title: 'Broken clock',
+      location: 'Sunway',
+      worker: 'John',
+      rating: 5,
+      expected: '31 Dec',
+      time: '2 mins ago',
+      link: '1'
+    },
+    {
+      title: 'Faulty display',
+      location: 'Sunway',
+      worker: 'John',
+      rating: 5,
+      expected: '31 Dec',
+      time: '2 mins ago',
+      link: '1'
+    },
+    {
+      title: 'Gas leakage',
+      location: 'Sunway',
+      worker: 'John',
+      rating: 5,
+      expected: '31 Dec',
+      time: '2 mins ago',
+      link: '1'
+    },
+    {
+      title: 'Traffic jam',
+      location: 'Sunway',
+      worker: 'John',
+      rating: 5,
+      expected: '31 Dec',
+      time: '2 mins ago',
+      link: '1'
+    },
+    {
+      title: 'Broken clock',
+      location: 'Sunway',
+      worker: 'John',
+      rating: 5,
+      expected: '31 Dec',
+      time: '2 mins ago',
+      link: '1'
+    },
+    {
+      title: 'Faulty display',
+      location: 'Sunway',
+      worker: 'John',
+      rating: 5,
+      expected: '31 Dec',
+      time: '2 mins ago',
+      link: '1'
+    }
+  ],
+  completed: [
+    {
+      title: 'Gas leakage',
+      location: 'Sunway',
+      worker: 'John',
+      completed: '3 days ago',
+      rating: 4,
+      time: '2 mins',
+      link: '2'
+    },
+    {
+      title: 'Traffic jam',
+      location: 'Sunway',
+      worker: 'John',
+      completed: '3 days ago',
+      rating: 4,
+      time: '2 mins',
+      link: '2'
+    },
+    {
+      title: 'Broken clock',
+      location: 'Sunway',
+      worker: 'John',
+      completed: '3 days ago',
+      rating: 4,
+      time: '2 mins',
+      link: '2'
+    },
+    {
+      title: 'Faulty display',
+      location: 'Sunway',
+      worker: 'John',
+      completed: '3 days ago',
+      rating: 4,
+      time: '2 mins',
+      link: '2'
+    },
+    {
+      title: 'Gas leakage',
+      location: 'Sunway',
+      worker: 'John',
+      completed: '3 days ago',
+      rating: 4,
+      time: '2 mins',
+      link: '2'
+    },
+    {
+      title: 'Traffic jam',
+      location: 'Sunway',
+      worker: 'John',
+      completed: '3 days ago',
+      rating: 4,
+      time: '2 mins',
+      link: '2'
+    },
+    {
+      title: 'Broken clock',
+      location: 'Sunway',
+      worker: 'John',
+      completed: '3 days ago',
+      rating: 4,
+      time: '2 mins',
+      link: '2'
+    },
+    {
+      title: 'Faulty display',
+      location: 'Sunway',
+      worker: 'John',
+      completed: '3 days ago',
+      rating: 4,
+      time: '2 mins',
+      link: '2'
+    }
+  ]
+}
+
 export default class App extends Component {
   state = {
     collapsed: true,
-    notifications: data.map((data, index) => ({ ...data, index }))
+    notifications: notifications.map((data, index) => ({ ...data, index })),
+    users,
+    complaints
   }
 
   handleDeleteNoti = index =>
@@ -106,6 +318,8 @@ export default class App extends Component {
             <Header />
             <Content
               notifications={this.state.notifications}
+              users={this.state.users}
+              complaints={this.state.complaints}
               handleDeleteNoti={this.handleDeleteNoti}
             />
             <Footer />
