@@ -292,7 +292,9 @@ export default class App extends Component {
   }
 
   componentDidMount() {
-    fetch('http://10.148.0.2:5000/complaint').then(res => console.log(res))
+    fetch('http://35.187.255.28:5000/complaint', { mode: 'no-cors' }).then(
+      res => console.log(res)
+    )
   }
 
   handleDeleteNoti = index =>
