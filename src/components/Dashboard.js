@@ -16,17 +16,14 @@ export default class Sidebar extends React.Component {
             />
           </Col>
           <Col span={6}>
-            <Card
-              title="Complaints"
-              extra={<Link link="/complaints">More</Link>}
-            >
+            <Card title="Complaints" extra={<Link to="/complaints">More</Link>}>
               <p>Card content</p>
               <p>Card content</p>
               <p>Card content</p>
             </Card>
           </Col>
           <Col span={6}>
-            <Card title="Users" extra={<Link link="/users">More</Link>}>
+            <Card title="Users" extra={<Link to="/users">More</Link>}>
               <p>Card content</p>
               <p>Card content</p>
               <p>Card content</p>
