@@ -287,7 +287,12 @@ export default class App extends Component {
     collapsed: true,
     notifications: notifications.map((data, index) => ({ ...data, index })),
     users,
-    complaints
+    complaints,
+    loading: true
+  }
+
+  componentDidMount() {
+    fetch('http://localhost:5000/complaint').then(res => console.log(res))
   }
 
   handleDeleteNoti = index =>

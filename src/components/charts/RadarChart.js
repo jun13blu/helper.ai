@@ -17,7 +17,7 @@ export default class RadarC extends React.Component {
         // cx={300}
         // cy={250}
         outerRadius={30}
-        width={220}
+        width={200}
         height={110}
         data={data}
       >

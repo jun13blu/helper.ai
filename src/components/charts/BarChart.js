@@ -11,7 +11,7 @@ export default class BarC extends React.Component {
   render() {
     return (
       <BarChart
-        width={250}
+        width={210}
         height={110}
         data={data}
         margin={{ top: 5, right: 30, left: -20, bottom: 5 }}

@@ -13,7 +13,7 @@ const data = [
 export default class PieC extends React.Component {
   render() {
     return (
-      <PieChart width={220} height={110}>
+      <PieChart width={210} height={110}>
         <Pie
           dataKey="value"
           data={data}

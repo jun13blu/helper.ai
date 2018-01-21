@@ -9,7 +9,7 @@ const data = [
 
 export default class LineC extends React.Component {
   render() {
-    const { width = 240, height = 110 } = this.props
+    const { width = 210, height = 110 } = this.props
     return (
       <LineChart
         width={width}
