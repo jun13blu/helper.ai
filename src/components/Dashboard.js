@@ -13,7 +13,7 @@ export default class Sidebar extends React.Component {
           <Col span={12}>
             <Map
               height="280px"
-              currentLocation={{ lat: 37.782, lng: -122.443 }}
+              currentLocation={{ lat: 3.0675, lng: 101.603333 }}
             />
           </Col>
           <Col span={6}>

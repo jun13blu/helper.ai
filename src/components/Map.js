@@ -8,17 +8,17 @@ import {
 import HeatmapLayer from 'react-google-maps/lib/components/visualization/HeatmapLayer'
 
 const data = [
-  { lat: 37.782551, lng: -122.445368 },
-  { lat: 37.782745, lng: -122.444586 },
-  { lat: 37.782842, lng: -122.443688 },
-  { lat: 37.782919, lng: -122.442815 },
-  { lat: 37.782992, lng: -122.442112 },
-  { lat: 37.7831, lng: -122.44146 }
+  { lat: 3.0675551, lng: 101.605368 },
+  { lat: 3.0675745, lng: 101.604586 },
+  { lat: 3.0675842, lng: 101.603688 },
+  { lat: 3.0675919, lng: 101.602815 },
+  { lat: 3.0675992, lng: 101.602112 },
+  { lat: 3.06751, lng: 101.60146 }
 ]
 
 const GMap = withScriptjs(
   withGoogleMap(props => (
-    <GoogleMap defaultZoom={8} defaultCenter={props.currentLocation}>
+    <GoogleMap defaultZoom={11} defaultCenter={props.currentLocation}>
       <HeatmapLayer
         data={props.data.map(
           ({ lat, lng }) => new window.google.maps.LatLng(lat, lng)
