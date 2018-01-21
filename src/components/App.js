@@ -292,7 +292,7 @@ export default class App extends Component {
   }
 
   componentDidMount() {
-    fetch('http://localhost:5000/complaint').then(res => console.log(res))
+    fetch('http://10.148.0.2:5000/complaint').then(res => console.log(res))
   }
 
   handleDeleteNoti = index =>
