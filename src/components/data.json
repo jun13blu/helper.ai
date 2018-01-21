@@ -312,5 +312,128 @@
         { "name": "James", "content": "Alright." }
       ]
     }
+  ],
+  "notifications": [
+    {
+      "title": "New complaint",
+      "description": "A new complaint is submitted.",
+      "icon": "message",
+      "time": "2 mins ago",
+      "link": "/complaints/24151"
+    },
+    {
+      "title": "Complaint resolved",
+      "description": "A complaint is successfully resolved.",
+      "icon": "flag",
+      "time": "5 mins ago",
+      "link": "/complaints/982"
+    },
+    {
+      "title": "New user",
+      "description": "A new user has registered an account.",
+      "icon": "user-add",
+      "time": "1 hour ago",
+      "link": "/users/1"
+    },
+    {
+      "title": "New complaint",
+      "description": "A new complaint is submitted.",
+      "icon": "message",
+      "time": "1 hour ago",
+      "link": "/complaints/24151"
+    },
+    {
+      "title": "Complaint resolved",
+      "description": "A complaint is successfully resolved.",
+      "icon": "flag",
+      "time": "3 hours ago",
+      "link": "/complaints/982"
+    },
+    {
+      "title": "New user",
+      "description": "A new user has registered an account.",
+      "icon": "user-add",
+      "time": "7 hours ago",
+      "link": "/users/1"
+    },
+    {
+      "title": "New complaint",
+      "description": "A new complaint is submitted.",
+      "icon": "message",
+      "time": "16 hours ago",
+      "link": "/complaints/24151"
+    },
+    {
+      "title": "Complaint resolved",
+      "description": "A complaint is successfully resolved.",
+      "icon": "flag",
+      "time": "Yesterday",
+      "link": "/complaints/982"
+    },
+    {
+      "title": "New user",
+      "description": "A new user has registered an account.",
+      "icon": "user-add",
+      "time": "Yesterday",
+      "link": "/users/1"
+    }
+  ],
+  "users": [
+    {
+      "name": "Jane",
+      "time": "13 April 2017",
+      "complaints": 7,
+      "rating": 4,
+      "link": "1"
+    },
+    {
+      "name": "John",
+      "time": "13 April 2017",
+      "complaints": 7,
+      "rating": 4,
+      "link": "1"
+    },
+    {
+      "name": "Jack",
+      "time": "13 April 2017",
+      "complaints": 7,
+      "rating": 4,
+      "link": "1"
+    },
+    {
+      "name": "Jill",
+      "time": "13 April 2017",
+      "complaints": 7,
+      "rating": 4,
+      "link": "1"
+    },
+    {
+      "name": "Jacob",
+      "time": "13 April 2017",
+      "complaints": 7,
+      "rating": 4,
+      "link": "1"
+    },
+    {
+      "name": "Jessie",
+      "time": "13 April 2017",
+      "complaints": 7,
+      "rating": 4,
+      "link": "1"
+    },
+    {
+      "name": "Jeckie",
+      "time": "13 April 2017",
+      "complaints": 7,
+      "rating": 4,
+      "link": "1"
+    },
+    {
+      "name": "Johnnie",
+      "time": "13 April 2017",
+      "complaints": 7,
+      "rating": 4,
+      "link": "1"
+    }
   ]
 }
