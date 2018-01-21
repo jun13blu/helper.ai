@@ -18,8 +18,8 @@ export default class Sidebar extends React.Component {
           </Col>
           <Col span={6}>
             <Card title="Complaints" extra={<Link to="/complaints">More</Link>}>
-              {complaints.progress.slice(0, 5).map(complaint => (
-                <p>
+              {complaints.progress.slice(0, 5).map((complaint, i) => (
+                <p key={i}>
                   <Link to={`/complaints/${complaint.link}`}>
                     {complaint.title}
                   </Link>
@@ -29,8 +29,8 @@ export default class Sidebar extends React.Component {
           </Col>
           <Col span={6}>
             <Card title="Users" extra={<Link to="/users">More</Link>}>
-              {users.slice(0, 5).map(user => (
-                <p>
+              {users.slice(0, 5).map((user, i) => (
+                <p key={i}>
                   <Link to={`/users/${user.link}`}>{user.name}</Link>
                 </p>
               ))}

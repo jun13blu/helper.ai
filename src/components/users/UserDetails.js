@@ -1,5 +1,5 @@
 import React from 'react'
-import { Layout, List, Avatar, Icon, Card, Row, Col } from 'antd'
+import { List, Avatar, Icon, Card, Row, Col } from 'antd'
 import { Link } from 'react-router-dom'
 
 const data = {

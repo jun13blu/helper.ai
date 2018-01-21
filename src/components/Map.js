@@ -20,7 +20,7 @@ const GMap = withScriptjs(
   withGoogleMap(props => (
     <GoogleMap defaultZoom={11} defaultCenter={props.currentLocation}>
       <HeatmapLayer
-        data={props.data.map(
+        data={data.map(
           ({ lat, lng }) => new window.google.maps.LatLng(lat, lng)
         )}
       />
@@ -32,7 +32,7 @@ const GMap = withScriptjs(
 const Map = ({ height, currentLocation }) => (
   <GMap
     isMarkerShown
-    googleMapURL="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places,visualization"
+    googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyAwP8LAyy87Qzr6BQtNQf-qPpECUGYYcRw&v=3.exp&libraries=geometry,drawing,places,visualization"
     loadingElement={<div style={{ height: `100%` }} />}
     containerElement={<div style={{ height }} />}
     mapElement={<div style={{ height: `100%` }} />}

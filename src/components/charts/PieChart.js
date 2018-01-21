@@ -15,6 +15,7 @@ export default class PieC extends React.Component {
     return (
       <PieChart width={220} height={110}>
         <Pie
+          dataKey="value"
           data={data}
           // cx={200}
           // cy={200}

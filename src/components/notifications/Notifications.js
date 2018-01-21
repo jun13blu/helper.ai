@@ -1,5 +1,5 @@
 import React from 'react'
-import { Layout, List, Avatar, Icon } from 'antd'
+import { List, Avatar, Icon } from 'antd'
 import { Link } from 'react-router-dom'
 
 export default class Notifications extends React.Component {

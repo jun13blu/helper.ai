@@ -1,5 +1,5 @@
 import React from 'react'
-import { Layout, List, Icon, Avatar } from 'antd'
+import { List, Icon, Avatar } from 'antd'
 import { Link } from 'react-router-dom'
 
 export default class Sidebar extends React.Component {

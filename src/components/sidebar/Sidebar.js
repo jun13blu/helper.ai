@@ -7,7 +7,6 @@ class Sidebar extends React.Component {
   render() {
     const { collapsed, handleCollapse, location } = this.props
     const key = location.pathname.split('/')[1] || 'dashboard'
-    console.log(key)
     return (
       <Layout.Sider
         collapsible

@@ -1,5 +1,5 @@
 import React from 'react'
-import { Layout, List, Avatar, Menu } from 'antd'
+import { List, Avatar, Menu } from 'antd'
 import { Link } from 'react-router-dom'
 
 export default class ComplaintList extends React.Component {
